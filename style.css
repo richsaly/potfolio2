@@ -1,0 +1,240 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ body{
+   background-color: #081b29;
+   color: blanchedalmond;
+ }
+
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+ }
+
+ .logo{
+    margin-left: 40px;
+    letter-spacing: 10PX;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: serif;
+    font-weight: 700;
+    color: yellowgreen;
+    transition: 0s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 5s linear infinite;
+ }
+
+ .logo::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1ms;
+ }
+
+ span{
+  color: red;
+ }
+
+ .navbar a{
+  color: blue;
+    margin-right: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0s;
+ }
+
+ .navbar a:hover,
+ .navbar a.active{
+  color: rgb(150, 133, 133);
+ }
+
+ .navbar button a{
+      text-align: center;
+      margin-left: 80px;
+ }
+
+ .navbar button{
+    background: white;
+    color: #081b29;
+    margin-right: 150px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 0 15px 10px rgb(7, 7, 7);
+ }
+
+ .home{
+  background-image: url(images/Salvation\ 22.png);
+   height: 120vh;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 0 10%;
+ }
+
+  .home-content h1{
+   font-size: 60px;
+   font-weight: 700;
+    color: white;
+ }
+
+ .home-content span{
+   color: blue;
+ }
+
+ .home-content h3{
+   font-size: 70px;
+   color: blue;
+ }
+
+ .home-content h3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: showRigh 1s ease forwards;
+  animation-delay: 3s;
+ }
+
+ .home-content p{
+   margin: 10px 0 30px;
+   font-size: 20px;
+   color: cornsilk;
+ }
+
+
+
+ .home-content .btn{
+  display: flex;
+  justify-content: space-between;
+   width: 345px;
+   height: 50px;
+ }
+
+ .btn a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+   width: 150px;
+   height: 50px;
+   background: blue;
+   border: 2px solid blue;
+   border-radius: 50px;
+   font-size: 20px;
+   color: #081b29;
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: 1px;
+   z-index: 1;
+   overflow: hidden;
+   transition: .5s;
+ }
+
+ .btn a:nth-child(2):hover{
+  color: #081b29;
+ }
+
+ .btn a:hover{
+  color: blue;
+ }
+
+ .btn a:nth-child(2){
+  background: transparent;
+  color: blue;
+ }
+
+ .btn a:nth-child(2)::before{
+   background: blue;
+ }
+
+ 
+ .btn a:nth-child(2){
+  background: #081b29;
+ }
+
+ .btn a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: .5s;
+ }
+
+ .btn a:hover::before {
+  width: 100%;
+ }
+
+ .home-ico{
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .home-ico a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 40px;
+  margin-left: 70px;
+  color: ;
+ }
+
+ .ico-coo {
+  margin-left: 50px;
+  font-size: 50px;
+ }
+
+.me-jpgHover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 675px;
+  height: 120%;
+  background: transparent;
+  transition: 3s;
+}
+
+.me-jpgHover:hover{
+background: #081b29;
+  opacity: .8;
+}
+
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translatey(0px);
+  }
+ }
